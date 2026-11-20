@@ -1,0 +1,19 @@
+[Unit]
+Description=Telegram Digest bot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+StateDirectory=telegram-digest
+WorkingDirectory=/opt/telegram-digest
+EnvironmentFile=/etc/telegram-digest.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -m telegram_digest
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=35
+
+[Install]
+WantedBy=multi-user.target
