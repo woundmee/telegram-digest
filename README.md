@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo.png" alt="Логотип Telegram Digest" width="144">
+  <img src="docs/logo.png" alt="Логотип Telegram Digest" width="164">
 </p>
 
 <h1 align="center">Telegram Digest</h1>
